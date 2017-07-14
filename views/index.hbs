@@ -1,17 +1,23 @@
-<section class="screen">
-  <h1>{{title}}</h1>
-  <p>Welcome to {{title}}</p>
+<section class="screen" onmouseenter="screenHovered()" onmouseleave="screenUnhovered()">
+  <!--<h1>{{title}}</h1>
+  <p>Welcome to {{title}}</p>-->
 
   <div id="cf4">
-    <img src="/images/hokkaido1.jpg" class="cf4img" />
-    <img src="/images/hokkaido2.jpg" class="cf4img" />
-    <img src="/images/hokkaido3.jpg" class="cf4img" />
-    <img src="/images/hokkaido2.jpg" class="cf4img" />
-    <img src="/images/hokkaido3.jpg" class="cf4img" />
+    <img src="/images/biei.jpg" class="cf4img" />
+    <img src="/images/furano.jpg" class="cf4img" />
+    <img src="/images/tokyo.jpg" class="cf4img" />
+    <img src="/images/nara.jpg" class="cf4img" />
+    <img src="/images/okinawa.jpg" class="cf4img" />
   </div>
 
-  <a class="prev">&#10094;</a>
-  <a class="next">&#10095;</a>
+  <a class="prev" onclick="prevSlide()">&#10094;</a>
+  <a class="next" onclick="nextSlide()">&#10095;</a>
+
+  <a class="imglabel"><span class="folder">PROJECTS /</span> BIEI</a>
+  <a class="imglabel"><span class="folder">PROJECTS /</span> FURANO</a>
+  <a class="imglabel"><span class="folder">PROJECTS /</span> TOKYO</a>
+  <a class="imglabel"><span class="folder">PROJECTS /</span> NARA</a>
+  <a class="imglabel"><span class="folder">PROJECTS /</span> OKINAWA</a>
 </section>
 
 <!--<div class="slideshow-container">

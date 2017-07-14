@@ -1,20 +1,44 @@
 /*==== FOR LAYOUT ====*/
 div.header-div{
-  padding: 20px;
+  padding: 10px;
+}
+div.header-div img {
+  padding: 5px;
+}
+
+* {
+  font-family: "Proxima Nova", arial, sans-serif;
+}
+
+.menu a {
+  color: white;
+  /*font-family: "Proxima Nova", arial, sans-serif;*/
+}
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+  border-top-color: white;
+}
+
+.is-dropdown-submenu a {
+  color: rgba(0,0,0,0.6);
 }
 
 /*==== FORTE HOME ====*/
+/*based off the image fader found here http://css3.bradshawenterprises.com/cfimg/*/
 @keyframes cf4FadeInOut {
   0% {
     opacity:1;
   }
-  18% {
+  19% {
     opacity:1;
   }
   20% {
     opacity:0;
   }
-  98% {
+  99% {
     opacity:0;
   }
   100% {
@@ -42,30 +66,28 @@ div.header-div{
   animation-name: cf4FadeInOut;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
-  animation-duration: 25s;
+  animation-duration: 40s;
   animation-direction: normal;
   /*animation-play-state: running;*/
+  width: 100%;
+  height: auto;
 }
 
 #cf4 img:nth-of-type(1) {
-  animation-delay: 20s;
+  animation-delay: 32s;
 }
 #cf4 img:nth-of-type(2) {
-  animation-delay: 15s;
+  animation-delay: 24s;
 }
 #cf4 img:nth-of-type(3) {
-  animation-delay: 10s;
+  animation-delay: 16s;
 }
 #cf4 img:nth-of-type(4) {
-  animation-delay: 5s;
+  animation-delay: 8s;
 }
 #cf4 img:nth-of-type(5) {
   animation-delay: 0s;
 }
-
-/*#cf4 img:hover{
-  animation-play-state: paused;
-}*/
 
 /* Next & previous buttons */
 .prev, .next {
@@ -88,59 +110,31 @@ div.header-div{
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+/* On hover, add a white background color */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(255,255,255,1);
+  color: rgba(0,0,0,0.6);
 }
 
+/* when screen is hoverd, pause animation */
 .screen:hover > #cf4 img {
   animation-play-state: paused;
 }
 
-
-
-
-
-
-/*== SLIDE SHOW ==*/
-* {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-.mySlides {
-    display: none;
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
+/* styling bottom left link */
+.imglabel {
   position: absolute;
-  bottom: 8px;
-  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: white;
+  padding: 10px 20px;
   text-align: center;
+  color: black;
+  text-decoration: none;
+  letter-spacing: 4px;
+  font-size: 90%;
 }
 
-/* Fading animation */
-.fade img{
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+.folder {
+  color: gray;
 }
