@@ -54,14 +54,16 @@ function showSlides(waitTime) {
     timeLastSwitched = new Date();
     var i;
     var slides = document.getElementsByClassName("imglabel");
-    var slidesArray = Array.prototype.slice.call(slides, 0).reverse();
-    for (i = 0; i < slidesArray.length; i++) {
-        slidesArray[i].style.display = "none";
+    if(slides.length !== 0){
+      var slidesArray = Array.prototype.slice.call(slides, 0).reverse();
+      for (i = 0; i < slidesArray.length; i++) {
+          slidesArray[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slidesArray.length) {slideIndex = 1}
+      slidesArray[slideIndex-1].style.display = "block";
+      calls.push(setTimeout(showSlides.bind(null, diffDelay*1000), waitTime)); // Change image every 8 seconds
     }
-    slideIndex++;
-    if (slideIndex > slidesArray.length) {slideIndex = 1}
-    slidesArray[slideIndex-1].style.display = "block";
-    calls.push(setTimeout(showSlides.bind(null, diffDelay*1000), waitTime)); // Change image every 8 seconds
   }
 }
 
