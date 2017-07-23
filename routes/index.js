@@ -10,4 +10,8 @@ router.get('/about', function(req, res, next) {
   res.render('about', {layout: 'layout-dark'});
 });
 
+router.get('/eboard', function(req, res, next) {
+  res.render('eboard', {layout: 'layout-dark'});
+});
+
 module.exports = router;

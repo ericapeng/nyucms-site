@@ -43,10 +43,19 @@ var timeLastSwitched = 0;   //the last time the slides switched
 var timePaused = 0;         //time when mouse entered and slides stopped
 var remaining = 0;          //remaining time to play when mouse leaves
 var calls = [];             //calls to execute set by setTimeout
-//start imglabel switching once DOM has loaded
-document.addEventListener("DOMContentLoaded", function(event) {
+//start imglabel switching once images, stylesheets, etc. has loaded
+window.addEventListener("load", function(event) {
   showSlides(diffDelay*1000 - 500);
+  setTimeout(displayHome, 2000);
 });
+
+//let the page completely load and then hide the loader
+function displayHome() {
+  var loading = document.getElementById("loading");
+  if(loading !== null) {
+    loading.style.display = "none";
+  }
+}
 
 //if mouse is not hovered, switch imglabels every diffDelay seconds
 function showSlides(waitTime) {
