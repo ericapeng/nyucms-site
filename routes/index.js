@@ -14,4 +14,8 @@ router.get('/eboard', function(req, res, next) {
   res.render('eboard', {layout: 'layout-dark'});
 });
 
+router.get('/event', function(req, res, next) {
+  res.render('event', {layout: 'layout-dark'});
+});
+
 module.exports = router;
