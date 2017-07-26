@@ -1,10 +1,10 @@
 $s(document).ready(function(){
   $s('.image-slider').slick({
     dots: false,
-    infinite: false,
+    infinite: true,
     speed: 450,
     slidesToShow: 1,
-    centerMode: false,
+    centerMode: true,
     variableWidth: true,
     arrows: true
   });
