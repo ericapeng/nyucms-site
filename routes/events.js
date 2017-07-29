@@ -25,7 +25,7 @@ router.get('/bubble-tea-tasting', function(req, res, next) {
   for(var i = 1; i < 6; i++) {
     fileNames.push(directory+'bbttasting'+i+'.jpg');
   }
-  var desc = "Love bubble tea? At our annual Bubble Tea Tasting event, we order delicious bubble tea some of the best boba vendors in the city, such as Gongcha, Coco's, Chatime, and more :) Come find out if you really know what your favorite bubble tea tastes like or just come by to try each one to find out which place suits your tastes!";
+  var desc = "Love bubble tea? We order a selection of the most delicious bubble tea from some of the best boba vendors in the city, such as Gongcha, Coco's, and Chatime for our annual Bubble Tea Tasting event. Come find out if you really know what your favorite bubble tea tastes like or just come by to try each one to find out which place suits your tastes!";
   res.render('event', {title: 'Bubble Tea Tasting', description: [desc], photos: fileNames, layout: 'layout-dark'});
 });
 

@@ -23,32 +23,55 @@ div.header-div img {
   text-decoration: underline;
 }
 
-.dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+.menu.is-drilldown-submenu a {
+  color: black;
+}
+
+.dropdown.menu.medium-horizontal > li.is-dropdown-submenu-parent > a::after {
   border-top-color: white;
 }
 .dropdown.menu.dark > li.is-dropdown-submenu-parent > a::after {
   border-top-color: black;
+}
+.menu > li.is-drilldown-submenu-parent > a::after {
+  border-left-color: white;
+}
+.menu.dark > li.is-drilldown-submenu-parent > a::after {
+  border-left-color: black;
+}
+li.js-drilldown-back > a::before {
+  border-right-color: black;
+}
+.vertical.drilldown {
+  width: 100%;
 }
 
 .is-dropdown-submenu a {
   color: rgba(0,0,0,0.6);
 }
 
-iframe {
-  width: 750px;
-  height: 400px;
-}
-
 div.centered-content {
   width: 750px;
+  max-width: 90%;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-div.centered-content h2,h6,iframe {
+div.centered-content h2,h6/*,iframe*/ {
   margin-top: 20px;
   margin-bottom: 20px;
   font-family: 'Quicksand', sans-serif;
+}
+
+.title-bar {
+  background: rgba(0,0,0,0);
+  width: 30%;
+  float: right;
+}
+
+.dark > .menu-icon::after {
+  background: black;
+  box-shadow: 0 7px 0 black, 0 14px 0 black;
 }
 
 /*==== FORTE HOME ====*/
@@ -103,11 +126,14 @@ div.centered-content h2,h6,iframe {
 }
 
 #cf4 img {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   position:absolute;
   top: 50%;
-  transform: translateY(-50%);
-  left:0;
+  left:50%;
+  transform: translate(-50%,-50%);
   animation-name: cf4FadeInOut;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
@@ -115,6 +141,8 @@ div.centered-content h2,h6,iframe {
   animation-direction: normal;
   width: 100%;
   height: auto;
+  min-width: 1024px;
+  min-height: 100%;
 }
 
 #cf4 img:nth-of-type(1) {
@@ -185,6 +213,10 @@ div.centered-content h2,h6,iframe {
 }
 
 /*==== ABOUT ====*/
+iframe {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 .left-column {
     width: 46%;
     height: 500px;
@@ -238,4 +270,27 @@ div.centered-slider h2,p,.image-slider {
 }
 .slick-prev:before, .slick-next:before {
   color: gray;
+}
+
+
+/*==== EBOARD PAGE ====*/
+.eboard-full-img {
+  padding-bottom: 40px;
+}
+.media-object {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.thumbnail img{
+  height: 200px;
+  width: auto;
+}
+
+div.thumbnail {
+  border: none;
+}
+
+.media-object-section {
+  padding-left: 20px;
 }

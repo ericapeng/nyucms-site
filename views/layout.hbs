@@ -11,14 +11,19 @@
     <div id="loading">
       <img id="loading-image" src="/images/loader.gif" alt="Loading..." />
     </div>
+    <div class="title-bar" data-responsive-toggle="mainmenu" data-hide-for="medium">
+      <button class="menu-icon" type="button" data-toggle="mainmenu" style="float:right;"></button>
+    </div>
+
     <div class="header-div">
       <a href="/">
         <img src="images/CMS-Logo.png" style="width:110px;height:110px;">
       </a>
-      <ul class="dropdown menu float-right" id="mainmenu" data-dropdown-menu>
+      <ul class="vertical medium-horizontal dropdown menu float-right" id="mainmenu" data-responsive-menu="drilldown medium-dropdown">
+      <!--<ul class="dropdown menu float-right" id="mainmenu" data-dropdown-menu>-->
         <li><a href="/about">About</a></li>
         <li>
-          <a href="#0">Events</a>
+          <a>Events</a>
           <ul class="menu">
             <li><a href="/events/yuan">Yuan</a></li>
             <li><a href="/events/bubble-tea-tasting">Bubble Tea Tasting</a></li>
