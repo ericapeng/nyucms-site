@@ -14,6 +14,12 @@ router.get('/eboard', function(req, res, next) {
   res.render('eboard', {layout: 'layout-dark'});
 });
 
+router.get('/join', function(req, res, next) {
+  res.render('join', {layout: 'layout-dark'});
+});
 
+router.get('/contact', function(req, res, next) {
+  res.render('contact', {layout: 'layout-dark'});
+});
 
 module.exports = router;
