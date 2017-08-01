@@ -46,7 +46,8 @@ var calls = [];             //calls to execute set by setTimeout
 //start imglabel switching once images, stylesheets, etc. has loaded
 window.addEventListener("load", function(event) {
   showSlides(diffDelay*1000 - 500);
-  setTimeout(displayHome, 2000);
+  //setTimeout(displayHome, 2000);
+  displayHome();
 });
 
 //let the page completely load and then hide the loader

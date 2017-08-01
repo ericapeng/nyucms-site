@@ -301,3 +301,9 @@ p.help-text {
   margin-bottom: 4px;
   font-size: 0.75rem;
 }
+h1.success {
+  color: #66d16d;
+}
+h1.error {
+  color: #c92e2e;
+}
