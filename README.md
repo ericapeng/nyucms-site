@@ -1,6 +1,6 @@
 # Chinese Mei Society's Website
 
-A website custom made for Chinese Mei Society, one of New York University's oldest asian cultural organizations on campus with over 1200 members. Inspired by Squarespace's Forte theme. Built purely with HTML, CSS, and JavaScript
+A website custom made for Chinese Mei Society, one of New York University's oldest asian cultural organizations on campus with over 1200 members. Inspired by Squarespace's Forte theme. Built purely with HTML, CSS, and JavaScript.
 
 See the deployed website [here](https://nyucms.org) (Deployed for free with Heroku, so it might take a couple seconds to load!)
 
@@ -15,14 +15,14 @@ Some of our past events include Spooky Foods Festival, Holiday Soiree, Bubble Te
 ## Screenshots
 
 Homepage
-![home1](/public/images/screenshots/screenshot1)
-![home2](/public/images/screenshots/screenshot2)
+![home1](/public/images/screenshots/screenshot1.png)
+![home2](/public/images/screenshots/screenshot2.png)
 
 /about
-![about](/public/images/screenshots/screenshot3)
+![about](/public/images/screenshots/screenshot3.png)
 
 /events/yuan
-![yuan](/public/images/screenshots/screenshot4)
+![yuan](/public/images/screenshots/screenshot4.png)
 
 /events/christmas-soiree
-![soiree](/public/images/screenshots/screenshot5)
+![soiree](/public/images/screenshots/screenshot5.png)
