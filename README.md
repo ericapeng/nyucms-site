@@ -1,3 +1,28 @@
 # Chinese Mei Society's Website
 
-A website custom made for CMS, one of New York University's oldest asian cultural organizations on campus. Inspired by Squarespace's Forte theme.
+A website custom made for Chinese Mei Society, one of New York University's oldest asian cultural organizations on campus with over 1200 members. Inspired by Squarespace's Forte theme. Built purely with HTML, CSS, and JavaScript
+
+See the deployed website [here](https://nyucms.org) (Deployed for free with Heroku, so it might take a couple seconds to load!)
+
+## About Chinese Mei Society
+
+CMS was originally founded in 1988 as an acapella group.
+
+The "Mei" in Chinese Mei Society originates from the word 梅, which means plum blossom. Just like a plum blossom, the founders of CMS hoped for the club to blossom at New York University. CMS is a club dedicated to building a community connected by Chinese and Chinese-American culture.
+
+Some of our past events include Spooky Foods Festival, Holiday Soiree, Bubble Tea Tasting, and Yuan.
+
+## Screenshots
+
+Homepage
+![home1](/public/images/screenshots/screenshot1)
+![home2](/public/images/screenshots/screenshot2)
+
+/about
+![about](/public/images/screenshots/screenshot3)
+
+/events/yuan
+![yuan](/public/images/screenshots/screenshot4)
+
+/events/christmas-soiree
+![soiree](/public/images/screenshots/screenshot5)
