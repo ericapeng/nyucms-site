@@ -43,12 +43,37 @@ var timeLastSwitched = 0;   //the last time the slides switched
 var timePaused = 0;         //time when mouse entered and slides stopped
 var remaining = 0;          //remaining time to play when mouse leaves
 var calls = [];             //calls to execute set by setTimeout
+
+var minHomeImgRatio = 1.5;  //min width:height ratio of homepage background img
+var maxHomeImgRatio = 1.77; //max width:height ratio of homepage background img
+
 //start imglabel switching once images, stylesheets, etc. has loaded
+//and resize background images depending on window ratio
 window.addEventListener("load", function(event) {
+  var cf4div = document.getElementById("cf4");
+  if(cf4div !== null && window.innerWidth/window.innerHeight < minHomeImgRatio) {
+    cf4div.style.width = (window.innerHeight*maxHomeImgRatio).toString()+"px";
+    cf4div.style.height = (window.innerHeight).toString()+"px";
+  }
   showSlides(diffDelay*1000 - 500);
   //setTimeout(displayHome, 2000);
   displayHome();
 });
+
+window.onresize = function(event) {
+  var cf4div = document.getElementById("cf4");
+  //if they're on a mobile phone, resize when they rotate their phone
+  if(cf4div !== null) {
+    if(window.innerWidth/window.innerHeight < minHomeImgRatio) {
+      cf4div.style.width = (window.innerHeight*maxHomeImgRatio).toString()+"px";
+      cf4div.style.height = (window.innerHeight).toString()+"px";
+    }
+    else {
+      cf4div.style.width = (window.innerWidth).toString()+"px";
+      cf4div.style.height = (window.innerHeight).toString()+"px";
+    }
+  }
+}
 
 //let the page completely load and then hide the loader
 function displayHome() {
