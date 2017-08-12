@@ -96,20 +96,34 @@ div.centered-content h2,h6/*,iframe*/ {
 }
 
 /*based off the image fader found here http://css3.bradshawenterprises.com/cfimg/*/
+/*additionally changing height to give "display: none" effect*/
 @keyframes cf4FadeInOut {
   0% {
+    height: initial;
     opacity:1;
   }
   19% {
+    height: initial;
     opacity:1;
   }
   20% {
+    height: initial;
     opacity:0;
   }
+  21% {
+    height: 0;
+    opacity: 0;
+  }
+  98% {
+    height: 0;
+    opacity: 0;
+  }
   99% {
+    height: initial;
     opacity:0;
   }
   100% {
+    height: initial;
     opacity:1;
   }
 }
@@ -159,6 +173,48 @@ div.centered-content h2,h6/*,iframe*/ {
   animation-delay: 0s;
 }
 
+div.cf4label {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: white;
+  padding: 10px 20px;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  letter-spacing: 4px;
+  font-size: 90%;
+  font-family: "Proxima Nova", arial, sans-serif;
+
+  animation-name: cf4FadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 40s;
+  animation-direction: normal;
+}
+/*NOTE: animation-delays must be negative in order to avoid the case of being visible before animation starts*/
+#cf4label1 {
+  animation-delay: -8s;
+}
+#cf4label2 {
+  animation-delay: -16s;
+}
+#cf4label3 {
+  animation-delay: -24s;
+}
+#cf4label4 {
+  animation-delay: -32s;
+}
+#cf4label5 {
+  animation-delay: 0s;
+}
+/*must override display otherwise will run into other javascript manipulation of display*/
+div.cf4label a {
+  color: black;
+  display: inline !important;
+}
+
+
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
@@ -190,20 +246,8 @@ div.centered-content h2,h6/*,iframe*/ {
 .screen:hover > #cf4 img {
   animation-play-state: paused;
 }
-
-/* styling bottom left link */
-.imglabel {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  background-color: white;
-  padding: 10px 20px;
-  text-align: center;
-  color: black;
-  text-decoration: none;
-  letter-spacing: 4px;
-  font-size: 90%;
-  font-family: "Proxima Nova", arial, sans-serif;
+.screen:hover > div.cf4label {
+  animation-play-state: paused;
 }
 
 .folder {
