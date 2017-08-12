@@ -2,7 +2,7 @@
 
 A website custom made for Chinese Mei Society, one of New York University's oldest asian cultural organizations on campus with over 1200 members. Inspired by Squarespace's Forte theme. Built purely with HTML, CSS, and JavaScript.
 
-See the deployed website [here](https://nyucms.org) (Deployed for free with Heroku, so it might take a couple seconds to load!)
+See the deployed website [here](www.nyucms.org) (Deployed for free with Heroku, so it might take a couple seconds to load!)
 
 ## About Chinese Mei Society
 
@@ -27,4 +27,4 @@ Homepage
 /events/christmas-soiree
 ![soiree](/public/images/screenshots/screenshot5.png)
 
-Check out the [nyucms.org](https://nyucms.org) to see it in action!
+Check out the [nyucms.org](www.nyucms.org) to see it in action!
