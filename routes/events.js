@@ -42,7 +42,7 @@ router.get('/christmas-soiree', function(req, res, next) {
 
 router.get('/soup-dumpling-tasting', function(req, res, next) {
   console.log(__dirname);
-  var directory = '/images/Event_Photos/Soup_Dumpling_tasting/';
+  var directory = '/images/Event_Photos/Soup_Dumpling_Tasting/';
   var fileNames = [];
   for(var i = 1; i < 5; i++) {
     fileNames.push(directory+'sdtasting'+i+'.jpg');
