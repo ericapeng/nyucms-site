@@ -15,7 +15,7 @@ router.get('/yuan', function(req, res, next) {
   }
   var desc = ["In celebration of Asian Heritage Month, Chinese Mei Society of New York University annually presents our greatest cultural production of the year, Yuan. Since 1988, Yuan has been one of our largest productions, attracting 200 to 250 guests on a yearly basis with an inspiring blend of performances, fashion, and fine dining. All proceeds are donated to charity."];
   desc.push("Check out some of our photos from YUAN V15ION, where our theme was Chinese festivals with a sleek and modern twist.");
-  res.render('event', {title: '緣 | YUAN', description: desc, photos: fileNames, layout: 'layout-dark'});
+  res.render('event', {title: '緣 | YUAN', description: desc, photos: fileNames, layout: 'layout-dark', yuan: true});
 });
 
 router.get('/bubble-tea-tasting', function(req, res, next) {

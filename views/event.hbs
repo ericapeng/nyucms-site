@@ -1,5 +1,10 @@
 <div class="centered-slider">
   <h2><b>{{title}}</b></h2>
+  {{#if yuan}}
+    <div class="responsive-embed widescreen">
+      <iframe width="750" height="400" src="https://www.youtube.com/embed/zgkGAOvPeMQ" frameborder="0" allowfullscreen></iframe>
+    </div>
+  {{/if}}
   {{#each description}}
     <p>{{this}}</p>
   {{/each}}
